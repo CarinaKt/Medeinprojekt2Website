@@ -3,24 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import {SidenavComponent} from "./sidenav/sidenav.component";
-import {MatButton} from "@angular/material/button";
-import {MatDrawer} from "@angular/material/sidenav";
-import {MatIcon} from "@angular/material/icon";
-import {MatToolbar} from "@angular/material/toolbar";
+import {MatIcon, MatIconModule} from "@angular/material/icon";
+import {MatToolbar, MatToolbarModule} from "@angular/material/toolbar";
+import {MatTabsModule} from "@angular/material/tabs";
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
   declarations: [
     ToolbarComponent,
-    SidenavComponent,
-    MatButton,
-    MatDrawer,
-    MatIcon,
-    MatToolbar
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatTabsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: []

@@ -8,10 +8,12 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { FirstPageComponent } from './pages/first-page/first-page.component';
 import { SecondPageComponent } from './pages/second-page/second-page.component';
-import { SidenavComponent } from './toolbarWithNav/sidenav/sidenav.component';
-import {MatIcon} from "@angular/material/icon";
+import { MatIconModule} from "@angular/material/icon";
 import {ToolbarWithNavModule} from "./toolbarWithNav/toolbarWithNav.module";
 import {CommonModule} from "@angular/common";
+import { MatToolbarModule} from "@angular/material/toolbar";
+import {MatSidenavModule} from "@angular/material/sidenav";
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -20,16 +22,18 @@ import {CommonModule} from "@angular/common";
     ToolbarComponent,
     FirstPageComponent,
     SecondPageComponent,
-    MatIcon,
-    SidenavComponent,
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ToolbarWithNavModule,
-    CommonModule
+    CommonModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatTabsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
