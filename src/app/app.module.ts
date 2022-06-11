@@ -14,6 +14,9 @@ import {CommonModule} from "@angular/common";
 import { MatToolbarModule} from "@angular/material/toolbar";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatButtonModule} from "@angular/material/button";
+import { FooterComponent } from './footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -22,6 +25,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     ToolbarComponent,
     FirstPageComponent,
     SecondPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +37,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatIconModule,
     MatSidenavModule,
     MatTabsModule,
+    MatButtonModule
 
   ],
   providers: [],
